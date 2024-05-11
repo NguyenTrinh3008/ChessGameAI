@@ -5,25 +5,15 @@ import chess.GamePanel;
 public class GameWindow extends javax.swing.JFrame {
 
     GamePanel gameScreen;
-
-    /**
-     * Creates new GameWindow
-     */
     public GameWindow() {
         initComponents();
         init();
     }
-
-    /**
-     * Initializes the game in the form
-     */
     private void init() {
         gameScreen = new GamePanel(jPanel1.getWidth(), jPanel1.getHeight());
         jPanel1.add(gameScreen);
     }
 
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -197,9 +187,8 @@ public class GameWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem_New2P;
     private javax.swing.JMenuItem jMenuItem_Save;
     private javax.swing.JMenuItem jMenuItem_Undo;
-    private javax.swing.JMenuItem jMenuItem_Redo; // Variable for the Redo menu item
+    private javax.swing.JMenuItem jMenuItem_Redo;
     private javax.swing.JMenu jMenu_File;
     private javax.swing.JMenu jMenu_Game;
     private javax.swing.JPanel jPanel1;
-    // End of variables declaration
 }

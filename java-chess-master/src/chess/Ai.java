@@ -68,7 +68,7 @@ public class Ai implements Serializable{
 
                 // check if we're running out of time
                 long currentTime = System.currentTimeMillis();
-                if (currentTime - startTime > 20000) {
+                if (currentTime - startTime > 15000) {
                     executor.shutdownNow();
                     return bestMove;
                 }

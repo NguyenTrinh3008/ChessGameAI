@@ -4,35 +4,19 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.util.List;
 import java.util.ArrayList;
-/**
- * A subclass of piece
- * @author Paul
- */
+
 public class Pawn extends Piece {
     
     private final int imageNumber = 0;
     
     public boolean enPassantOk = false;
-    
-    /**
-     * Creates a new pawn
-     * @param location location of the piece
-     * @param color color of the piece
-     */
+
     public Pawn(Point location, Color color) {
         this.numMoves = 0;
         this.color = color;
         this.location = location;
     }    
-    
-    /**
-     * Private constructor used to make copies of the piece
-     * @param location location of the piece
-     * @param color color of the piece
-     * @param moves number of moves the piece has made
-     * @param captureableEnPassant whether the pawn can currently be captured 
-     *  "en passant" or not
-     */
+
     private Pawn(Point location, Color color, int moves, boolean captureableEnPassant) {
         enPassantOk = captureableEnPassant;
         this.numMoves = moves;
@@ -40,49 +24,23 @@ public class Pawn extends Piece {
         this.location = location;
     }
 
-    /**
-     * Returns a copy of the pawn
-     * @return a copy of the pawn
-     */
     public Piece clone() {
         return new Pawn(new Point(this.location.x, this.location.y),
                 this.color, this.numMoves, this.enPassantOk);
     }
-    
-    /**
-     * Returns the index of the Piece's image in an array.
-     *  Can be used for determining the relative value of the piece.
-     *  Pieces have the following indices:
-     *  [0]:pawn [1]:knight [2]:bishop [3]:rook [4]:queen [5]:king
-     * @return array index
-     */
+
     public int getImageNumber() {
         return imageNumber;
     }
-    
-    /**
-     * Returns the white image for this piece
-     * @return white image
-     */
+
     public BufferedImage getWhiteImage() {
         return whiteImages[imageNumber];
     }
-    
-    /**
-     * Returns the black image for this piece
-     * @return black image
-     */
+
     public BufferedImage getBlackImage() {
         return blackImages[imageNumber];
     }
-    
-    /**
-     * A method to get all the valid moves for a piece
-     * @param board the board to get valid moves on for the piece.
-     * @param checkKing whether or not to check if the move puts own king
-     *  in check. Necessary to prevent infinite recursion.
-     * @return List containing valid move points
-     */
+
     public List<Move> getValidMoves(Board board, boolean checkKing) {
         List<Move> moves = new ArrayList<Move>();
 
@@ -110,11 +68,7 @@ public class Pawn extends Piece {
                 }
         return moves;
     }
-    
-    /**
-     * Adds moves in which the pawn advances to the list of moves
-     * @param moves the list of moves
-     */
+
     private void advance(Board board, List<Move> moves) {
         int x = location.x;
         int y = location.y;
@@ -144,10 +98,6 @@ public class Pawn extends Piece {
         }
     }
 
-    /**
-     * Adds moves in which the pawn captures to the list of moves
-     * @param moves the list of moves
-     */
     private void capture(Board board, List<Move> moves) {
         int x = location.x;
         int y = location.y;
@@ -176,11 +126,7 @@ public class Pawn extends Piece {
                     moves.add(new Move(this, pt, pc));       
         }
     }
-    
-    /**
-     * Adds moves in which the pawn captures "en passant" to the list of moves
-     * @param moves the list of moves
-     */
+
     private void enPassant(Board board, List<Move> moves) {
         int x = location.x;
         int y = location.y; 
@@ -202,12 +148,7 @@ public class Pawn extends Piece {
                         board.getPieceAt(new Point(x + 1, y))));            
         }
     }
-    
-    /**
-     * Checks if the pawn can capture another pawn by en passant
-     * @param pt location of the other pawn
-     * @return true if can be captured
-     */
+
     private boolean canCaptureEnPassant(Board board, Point pt) {
         Piece temp = board.getPieceAt(pt);
         if(temp != null)

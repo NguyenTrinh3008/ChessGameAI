@@ -2,10 +2,6 @@ package chess;
 
 import java.awt.Point;
 
-/**
- * A subclass of move to allow castling
- * @author Paul
- */
 public class CastleMove extends Move {  
     private Piece rook;
     private Point moveRookTo;
