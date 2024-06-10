@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="ChessGame">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/java-chess-master/dist/ChessGame.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dsaProject2023-main/dist/ChessGame.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

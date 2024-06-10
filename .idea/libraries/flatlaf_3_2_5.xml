@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="flatlaf-3.2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dsaProject2023-main/flatlaf-3.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="beansbinding-1.2.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/java-chess-master/dist/lib/beansbinding-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dsaProject2023-main/dist/lib/beansbinding-1.2.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
