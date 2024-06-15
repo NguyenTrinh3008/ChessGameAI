@@ -1,3 +1,9 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: This class defines the CastleMove, a specialized move in chess
+that involves both the king and a rook.
+*/
+
 package chess;
 
 import java.awt.Point;

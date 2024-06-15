@@ -1,3 +1,10 @@
+/*
+ Name: Trinh Bình Nguyên
+ Purpose: This program defines an AI for playing chess. The AI uses a
+          minimax algorithm with alpha-beta pruning to determine the best move.
+          The depth of the search is configurable, and the AI can handle moves
+          concurrently to speed up the decision-making process.
+*/
 package chess;
 import java.awt.*;
 import java.util.List;

@@ -1,3 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the abstract Decorator class, implementing the IComponent interface, to serve as a base for decorating components that can draw a board and load images.
+*/
+
 package Decor;
 
 import Decor.IComponent;

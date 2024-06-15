@@ -1,3 +1,8 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the Rook class, a subclass of Piece, representing a rook chess piece.
+*/
+
 package chess;
 
 import java.awt.Point;

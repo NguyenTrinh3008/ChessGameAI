@@ -1,3 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the PieceList class for managing a linked list of chess pieces.
+*/
+
 package LinkednStack;
 
 import chess.Piece;

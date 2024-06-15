@@ -1,5 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Creates startmenu
+*/
 package UI;
-
 
 import chess.GamePanel;
 
@@ -17,7 +20,7 @@ import javax.swing.*;
 public class StartMenu implements Runnable {
 
     public void run() {
-        final JFrame startWindow = new JFrame("Chess");
+        final JFrame startWindow = new JFrame("Chess Game by Trinh Nguyen");
         // Set window properties
         startWindow.setLocation(500, 100);
         startWindow.setResizable(false);
@@ -29,7 +32,7 @@ public class StartMenu implements Runnable {
         // Game title
         final JPanel titlePanel = new JPanel();
         components.add(titlePanel);
-        final JLabel titleLabel = new JLabel("Chess");
+        final JLabel titleLabel = new JLabel("Chess Game by Trinh Nguyen");
         titlePanel.add(titleLabel);
 
         // Black player selections
@@ -112,11 +115,11 @@ public class StartMenu implements Runnable {
         instr.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(startWindow,
-                        "To begin a new game, input player names\n" +
-                                "next to the pieces. Set the clocks and\n" +
-                                "click \"Start\". Setting the timer to all\n" +
-                                "zeroes begins a new untimed game.",
-                        "How to play",
+                        "To start a new game, enter player names\n" +
+                                "next to their pieces. Set the timers and\n" +
+                                "click on \"Start\". Setting all timers\n" +
+                                "to zero begins a new game without time limits.",
+                        "BÍ SKÍP!!!",
                         JOptionPane.PLAIN_MESSAGE);
             }
         });
@@ -126,7 +129,7 @@ public class StartMenu implements Runnable {
         final GamePanel GP = new GamePanel(startWindow.getWidth(), startWindow.getHeight());
 
 
-        final JComboBox<String> theme = new JComboBox <String>(new String[]{"Default", "Christmas", "New Year"});
+        final JComboBox<String> theme = new JComboBox <String>(new String[]{"Classic", "Christmas", "New Year"});
         final JComboBox<String> mode = new JComboBox <String>(new String[]{"vsHuman", "vsComputer"});
 
 
@@ -156,7 +159,7 @@ public class StartMenu implements Runnable {
                     colorTheme = GamePanel.ColorBoard.C;
                 } else if (theme.getSelectedItem().toString().equals("New Year")) {
                     colorTheme = GamePanel.ColorBoard.N;
-                } else if (theme.getSelectedItem().toString().equals("Default")) {
+                } else if (theme.getSelectedItem().toString().equals("Classic")) {
                     colorTheme = GamePanel.ColorBoard.D;
                 }
 

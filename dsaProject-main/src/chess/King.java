@@ -1,3 +1,10 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: This program defines the King class, representing the King piece in a chess game.
+The class includes functionalities to determine the valid moves for the King, including
+regular moves and castling.
+*/
+
 package chess;
 
 import java.awt.Point;

@@ -1,3 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the IComponent interface for implementing components that can draw a board and load images.
+*/
+
 package Decor;
 
 import java.awt.Graphics;

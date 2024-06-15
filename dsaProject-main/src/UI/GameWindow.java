@@ -1,3 +1,7 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the game window.
+*/
 package UI;
 
 import java.awt.*;
@@ -41,7 +45,7 @@ public class GameWindow {
         blackClock = new Clock(hh, ss, mm);
         whiteClock = new Clock(hh, ss, mm);
 
-        gameWindow = new JFrame("Chess Game - DSA project");
+        gameWindow = new JFrame("Chess Game by Trinh Nguyen");
 
         try {
             Image whiteImg = ImageIO.read(new File("PIECES/withe.png"));
@@ -187,7 +191,7 @@ public class GameWindow {
             }
         });
 
-        final JButton nGame = new JButton("New game");
+        final JButton nGame = new JButton("New Game");
 
         nGame.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -203,20 +207,19 @@ public class GameWindow {
             }
         });
 
-        final JButton instr = new JButton("How to play");
+        final JButton instr = new JButton("How 2 play");
 
         instr.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(gameWindow,
-                        "Move the chess pieces on the board by clicking\n"
-                                + "and dragging. The game will watch out for illegal\n"
-                                + "moves. You can win either by your opponent running\n"
-                                + "out of time or by checkmating your opponent.\n"
-                                + "\nGood luck, hope you enjoy the game!",
-                        "How to play",
+                        "To play, move chess pieces by clicking and dragging.\n"
+                                + "The game prevents illegal moves. Win by either\n"
+                                + "timing out your opponent or checkmating them.\n"
+                                + "\nGood luck and enjoy the game!",
+                        "How 2 Play",
                         JOptionPane.PLAIN_MESSAGE);
             }
-        });
+    });
 
         // Set layout to null for absolute positioning
         downButtons.setLayout(null);
@@ -235,14 +238,12 @@ public class GameWindow {
         instr.setBackground(gray);
         nGame.setBackground(gray);
         quit.setBackground(gray);
-//        downButtons.setPreferredSize(downButtons.getMinimumSize());
 
         return downButtons;
     }
 
     private JPanel sideButtons() {
         JPanel sideButtons = new JPanel();
-     //   sideButtons.setLayout(new GridLayout(10, 10, 50, 30));
 
         final JButton undo = new JButton("Undo");
 

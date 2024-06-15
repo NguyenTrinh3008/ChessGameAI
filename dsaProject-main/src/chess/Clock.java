@@ -1,3 +1,9 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: This class defines a Clock that manages and displays time,
+providing functionality to decrement time and check if time has run out.
+*/
+
 package chess;
 public class Clock {
     private int hh;

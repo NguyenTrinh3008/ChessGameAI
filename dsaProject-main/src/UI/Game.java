@@ -1,6 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the game menu
+*/
 package UI;
-
-
 import javax.swing.*;
 
 public class Game implements Runnable {

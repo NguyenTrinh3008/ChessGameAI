@@ -1,3 +1,13 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: This program defines the GamePanel class for a chess game,
+managing the graphical user interface, user interactions, and game status.
+It includes functionalities for handling mouse events, drawing the board
+and pieces, saving/loading game states, and implementing different game modes
+(Human vs Human, Human vs AI). Additionally, it integrates holiday-themed
+decorations using the Decorator pattern.
+*/
+
 package chess;
 
 import Decor.ChristmasDecorator;

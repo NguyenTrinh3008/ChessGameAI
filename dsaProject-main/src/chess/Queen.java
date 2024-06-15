@@ -1,3 +1,8 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the Queen class, a subclass of Piece, representing a queen chess piece.
+*/
+
 package chess;
 
 import java.awt.Point;

@@ -1,3 +1,8 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the Pawn class, a subclass of Piece, representing a pawn chess piece.
+*/
+
 package chess;
 
 import java.awt.Point;

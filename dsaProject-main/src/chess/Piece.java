@@ -1,3 +1,8 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the abstract Piece class, representing a chess piece with common properties and behaviors.
+*/
+
 package chess;
 
 import java.awt.Point;

@@ -1,3 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the TurnList class for managing a linked list of turns in a chess game.
+*/
+
 package LinkednStack;
 
 import chess.Piece;

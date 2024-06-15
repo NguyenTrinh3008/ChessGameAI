@@ -1,3 +1,8 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the Move class, representing a move in a chess game.
+*/
+
 package chess;
 
 import java.awt.Point;
@@ -8,8 +13,6 @@ public class Move {
     private Point moveTo;
     private Piece toCapture;
     private Piece InitialLocation;
-
-//    private Linkedlist linkedlist;
 
 
     public Move(Piece toMove, Point moveTo, Piece toCapture) {

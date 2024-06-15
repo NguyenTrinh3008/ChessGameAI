@@ -8,4 +8,3 @@ STEP 3: In the package " src " , please go the to package " UI "
 
 STEP 4: In the package " UI " , please choose the class " Game " and run it
 
-YOUTUBE PRESENTATION LINK : https://www.youtube.com/watch?v=aarWw2fPyic

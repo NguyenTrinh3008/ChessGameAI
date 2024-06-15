@@ -1,3 +1,8 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Defines the InCheckList class for managing a linked list of chess pieces in check.
+*/
+
 package LinkednStack;
 
 import chess.Piece;

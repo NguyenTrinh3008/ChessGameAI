@@ -1,3 +1,7 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: Defines the Knight class, a subclass of Piece, representing a knight chess piece.
+*/
 package chess;
 
 import java.awt.Point;

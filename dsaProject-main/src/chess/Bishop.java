@@ -1,5 +1,9 @@
+/*
+ Name: Trinh Bình Nguyên
+ Purpose: This program defines the Bishop piece in a chess game, including its
+          movement capabilities and interactions on the chessboard.
+*/
 package chess;
-
 import java.awt.Point;
 import java.util.List;
 import java.util.ArrayList;

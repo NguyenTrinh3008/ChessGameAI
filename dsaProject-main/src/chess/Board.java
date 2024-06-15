@@ -1,5 +1,9 @@
+/*
+Name: Trinh Bình Nguyên
+Purpose: This program defines the Board class for a chess game,
+managing the game state, moves, and interactions with AI.
+*/
 package chess;
-
 import LinkednStack.InCheckList;
 import LinkednStack.PieceList;
 import LinkednStack.TurnList;

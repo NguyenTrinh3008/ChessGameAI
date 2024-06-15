@@ -1,8 +1,9 @@
-/* Name: GROUP 8 
-    Ma Phung Nghia - ITCSIU2106
-    Huynh Thi Ngoc Tram - ITCSIU21238
-    Nguyen Huy Bao - ITDSIU21076
-    Purpose : create a game apply data structure and all knowledge about coding*/
+/*
+Name: Trinh Bình Nguyên
+Purpose: Implements the ChristmasDecorator class, extending Decorator,
+to apply a Christmas theme to a chess game.
+*/
+
 
 package Decor;
 

@@ -1,3 +1,9 @@
+/*
+Name: Trinh Binh Nguyen
+Purpose: Implements the NewyearDecorator class, extending Decorator,
+to apply a New Year theme to a chess game.
+*/
+
 package Decor;
 
 import chess.GamePanel;
