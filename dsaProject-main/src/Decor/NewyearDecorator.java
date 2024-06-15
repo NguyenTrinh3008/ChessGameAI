@@ -21,8 +21,8 @@ public class NewyearDecorator extends Decorator {
         // TODO Auto-generated constructor stub
     }
 
-    final Color lightColor = new Color(255, 253, 196);
-    final Color darkColor = new Color(174, 241, 255);
+    final Color lightColor = new Color(179, 55, 39, 255);
+    final Color darkColor = new Color(255, 253, 85, 255);
 
     private void addNewYearTheme(Graphics g, int sW, int sH) {
         // draw a light background

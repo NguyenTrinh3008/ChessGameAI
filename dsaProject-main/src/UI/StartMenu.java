@@ -41,7 +41,7 @@ public class StartMenu implements Runnable {
             blackPiece.setIcon(new ImageIcon(blackImg));
             blackPanel.add(blackPiece);
         } catch (Exception e) {
-            System.out.println("Required game file lion.png missing");
+            System.out.println("Required game file black.png missing");
         }
 
 
@@ -59,7 +59,7 @@ public class StartMenu implements Runnable {
             whitePanel.add(whitePiece);
             startWindow.setIconImage(whiteImg);
         } catch (Exception e) {
-            System.out.println("Required game file tiger.png missing");
+            System.out.println("Required game file white.png missing");
         }
 
 
@@ -126,7 +126,7 @@ public class StartMenu implements Runnable {
         final GamePanel GP = new GamePanel(startWindow.getWidth(), startWindow.getHeight());
 
 
-        final JComboBox<String> theme = new JComboBox <String>(new String[]{"Default", "Christmas", "New Year", "Wood"});
+        final JComboBox<String> theme = new JComboBox <String>(new String[]{"Default", "Christmas", "New Year"});
         final JComboBox<String> mode = new JComboBox <String>(new String[]{"vsHuman", "vsComputer"});
 
 
@@ -156,8 +156,6 @@ public class StartMenu implements Runnable {
                     colorTheme = GamePanel.ColorBoard.C;
                 } else if (theme.getSelectedItem().toString().equals("New Year")) {
                     colorTheme = GamePanel.ColorBoard.N;
-                }  else if (theme.getSelectedItem().toString().equals("Wood")) {
-                    colorTheme = GamePanel.ColorBoard.W;
                 } else if (theme.getSelectedItem().toString().equals("Default")) {
                     colorTheme = GamePanel.ColorBoard.D;
                 }

@@ -27,9 +27,9 @@ public class ChristmasDecorator extends Decorator {
     boolean imagesLoaded = false;
 
     private GamePanel gp;
+    final Color lightColor = new Color(255, 253, 196);
+    final Color darkColor = new Color(174, 241, 255);
 
-    final Color lightColor = new Color(179, 0, 12, 255);
-    final Color darkColor = new Color(15, 89, 1, 255);
 
     private void loadChristmasImages(){
         try {
@@ -102,12 +102,9 @@ public class ChristmasDecorator extends Decorator {
         }
     }
 
-
-
     @Override
     public void drawBoard(Graphics g, int sW, int sH) {
         // TODO Auto-generated method stub
-
         super.drawBoard(g, sW, sH);
         addChristmasTheme(g, sW, sH);
         super.loadImage();
